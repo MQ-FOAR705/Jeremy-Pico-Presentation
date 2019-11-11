@@ -12,6 +12,16 @@
 \usepackage{graphicx}
 %example pictures created via: http://lorempixel.com/1200/800/cats/Figure2/. Credit to http://lorempixel.com/images.php
 
+%\usepackage[colorlinks=true,linkcolor=blue]{hyperref}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
 \usepackage{epsfig}
 \usepackage{siunitx}
 \usepackage{color}
@@ -148,10 +158,10 @@
     % for upload
     
      
-\Acrobatmenu{FullScreenPrefs}{\vspace{0.3cm}\hspace{0.24cm}\mbox{%
-      \includegraphics[height=0.04\textheight,keepaspectratio]{%
-	  figure/CreativeCommons_Attribution_License.eps}%
-	  }}
+%\Acrobatmenu{FullScreenPrefs}{\vspace{0.3cm}\hspace{0.24cm}\mbox{%
+%      \includegraphics[height=0.04\textheight,keepaspectratio]{%
+%	  figure/CreativeCommons_Attribution_License.eps}%
+%	  }}
    }
     \vspace{0.05cm}
 \end{beamercolorbox}%
@@ -239,7 +249,7 @@ Screenshots/GHttest5txtcommit2.png}
 \end{center}
   \vspace{-0.5cm}
   
-  I edited in the last line in the body and the second comment from a txt file. Pandoc converted it to this Docx with the changes transferred successfully.
+  Pandoc preserves the edits for the new Docx file!
 
 %Screenshots/GHttest5txthist.png
 \end{frame}
@@ -249,6 +259,20 @@ Screenshots/GHttest5txtcommit2.png}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}\label{\secvariable}
 \begin{center}
+\includegraphics[width=1\textwidth,height=0.75\textheight,keepaspectratio]{%
+Screenshots/txt-word-edit.png}
+\end{center}
+    \parbox{\linewidth}{
+
+A txt file converted from a Docx via Pandoc in Shell. Highlighted sections are written in txt, and when run through Pandoc from .txt to .docx...
+}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mysection{major}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}\label{\secvariable} %%Eine Folie
+\begin{center}
   \vspace{-0.5cm}
   %http://lorempixel.com/1200/800/cats/Figure4/
  \includegraphics[width=1\textwidth,height=0.75\textheight,keepaspectratio]{%
@@ -257,23 +281,7 @@ Screenshots/GHttest5txtcommit2.png}
   \vspace{-0.5cm}
   
   I edited in the last line in the body and the second comment from a txt file. Pandoc converted it to this Docx with the changes transferred successfully.
-  
-\end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\mysection{major}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}\label{\secvariable} %%Eine Folie
-\begin{center}
-%http://lorempixel.com/1200/800/cats/Figure5/
-\includegraphics[width=1\textwidth,height=0.8\textheight,keepaspectratio]{%
-Screenshot/pandoc-convlist.png}
-\end{center}
-
-    \parbox{\linewidth}{
-
-Vivamus efficitur ac odio ac scelerisque. Sed tristique vel sapien euismod elementum. Donec eu mollis mi, et auctor est.
-}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -281,14 +289,16 @@ Vivamus efficitur ac odio ac scelerisque. Sed tristique vel sapien euismod eleme
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}\label{\secvariable}
 %http://lorempixel.com/1200/800/cats/Figure6/
-\begin{center}
-\includegraphics[width=1\textwidth,height=0.75\textheight,keepaspectratio]{%
-figure/figure6.png}
-\end{center}
-    \parbox{\linewidth}{
 
-Etiam cursus nibh nec ex tincidunt pharetra quis vel nibh. Sed condimentum lobortis mollis. Donec vitae odio nec lacus iaculis condimentum. Proin dictum consequat quam nec. \hyperlink{slabtable}{\beamerbutton{more \dots}}
-}
+\begin{center}
+  \vspace{-0.5cm}
+  %http://lorempixel.com/1200/800/cats/Figure4/
+ \includegraphics[width=1\textwidth,height=0.75\textheight,keepaspectratio]{%
+  Screenshots/pandoc-convlist.png}
+\end{center}
+  \vspace{-0.5cm}
+  
+  List of conversions \href{https://pandoc.org/index.html}{Pandoc} can do 
 
 \end{frame}
 
@@ -307,30 +317,8 @@ Morbi mauris turpis, ornare eu elit quis, pulvinar bibendum sapien. Nulla vel ju
 \end{column}
 \end{columns}
 \usebeamerfont{bodytext}
- \begin{tabular}{c|rr@{}c@{}rrrrr}
- \setlength{\tabcolsep}{6mm}
-   & Time & \multicolumn{3}{r}{Volume} & Range & Length & Area & Depth \\
-   & [\si{\second}] & \multicolumn{3}{r}{[\si{\cubic\metre}]} & [\si{\metre}] &
-[\si{\metre}] & [\si{\square\metre}] & [\si{\metre}]\\\hline
-
-   \textbf{Avalanche~\#0019} & & $V_t$ &=& 29500 & & & 40411 & 0.73 \\
-   initial release &3.4& $V_0$ &=& 2188 & 2506 &  62 &  1400 & 1.56 \\
-   slab \#1 & 17.2    &  $V_1$ &=&  521 & 2356 &  39 &   701 & 0.74 \\
-   slab \#2 & 23.4    &  $V_2$ &=& 3503 & 2284 &  83 &  2753 & 1.28 \\
-   slab \#3 & 20--25$^*$ &  $V_3$ &=& 3345 & 2150 &  99 &  1880 & 1.78 \\
-   slab \#4 & 38.7    &  $V_4$ &=& 4276 & 1945 & 153 &  3657 & 1.17 \\
-   \\
-   \textbf{Avalanche~\#0017} & &  $V_t$ &=& 78500 & & & 82632 & 0.95\\
-   initial release&5.2&  $V_0$ &=& 15233 & 2402 & 191 & 12974 & 1.17\\
-   slab \#5 & 12.2    &  $V_5$ &=&  7620 & 2219 & 202 &  6043 & 1.26 \\
-   slab \#6 & 14.1    &  $V_6$ &=&  5868 & 2215 & 166 &  5851 & 1.01 \\
-   slab \#7 & 25.6    &  $V_7$ &=&  6307 & 1982 &  95 &  3320 & 1.90 \\
-   slab \#8 & 15--25$^*$ &  $V_8$ &=& 10663 & 1947 & 253 &  5037 & 2.12
- \end{tabular}
  
 \vspace{0.2cm}
- \textbf{Table:} Release time, Volume, Location and size parameters of all
-identified slabs.
 
 \end{frame}
 
@@ -348,8 +336,6 @@ figure/figure7.png}
 \end{center}
 \vspace{-0.2cm}
 
-Duis 
-
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -358,12 +344,12 @@ Duis
 \begin{frame}\label{\secvariable}
 
 %
-\includegraphics[width=0.45\textwidth,height=1\textheight,keepaspectratio]{%
-figure/figure7.png}\hspace{.05\textwidth}
-\includegraphics[width=0.45\textwidth,height=1\textheight,keepaspectratio]{%
-figure/figure7.png}
-
-Maecenas 
+Websites
+    \begin{itemize}
+        \item \href{https://pandoc.org/index.html}{Pandoc}
+        \item \href{https://github.com/}{GitHub}
+        \item \href{https://git-scm.com/}{Git}
+    \end{itemize}
 
 \end{frame}
 
@@ -371,18 +357,6 @@ Maecenas
 \mysection{conclusion}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}\label{\secvariable}
-  
-  \begin{itemize}
-   \item Curabitur 
-  \item Quisque 
-  \item Vivamus
-
-  \end{itemize}
-
-  \usebeamerfont{bodytext}
-  K\"ohler, A., J. N. McElwaine, B. Sovilla, M. Ash, P. Brennan (in Review),
-Surge dynamics of the 3 February 2015 avalanches in Valle\'e de la Sionne,
-\textit{J. Geophys. Res.} 
   
 \end{frame}
 
