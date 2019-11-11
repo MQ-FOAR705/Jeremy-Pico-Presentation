@@ -62,7 +62,7 @@
 \setbeamerfont{bodytext}{size=\scriptsize}
 	
 % Title setup	
-\title{Making feedback tracking easy}
+\title{Robust feedback tracking for Docx et al}
 \author{Jeremy Amin\inst{1} (\texttt{jeremy.amin@stuents.mq.edu.au})}
 
 % add title in headbox
@@ -70,10 +70,10 @@
 {\leavevmode
 \begin{beamercolorbox}[width=1\paperwidth]{head title}
   % LOGO
-  \vspace{0.1cm}
+  \vspace{.1cm}
   \begin{columns}[t, totalwidth=\textwidth]
-  \begin{column}[c]{1.05cm}
-     \includegraphics[width=1cm]{figure/logo1.png}
+  \begin{column}[c]{1.5cm}
+     \includegraphics[width=1cm]{Logos/pandoc-image.png}
   \end{column}
   % TITLE
    \begin{column}[c]{10.6cm}
@@ -84,9 +84,9 @@
    \centering \usebeamerfont{institute} \insertinstitute
   \end{column}
   % PICTURE
-  \begin{column}[c]{1.15cm}
+  \begin{column}[c]{1cm}
     \hspace{0.005cm}
-    \includegraphics[width=1cm]{figure/figure1.png}
+    \includegraphics[width=1cm]{Logos/git-image.png}
   \end{column}
   \end{columns}
   {\color{slfcolor}\hrule height 1pt\vspace{0.1cm}}
@@ -171,20 +171,25 @@
 
 \parbox{\linewidth}{
 
-Original template: https://github.com/snowtechblog/pico-latex-presentation by Anselm Köhler
+\boldsymbol{PROBLEM:} We cannot control how our peers prefer to receive and provide feedback on our work. Docx, TeX, txt, PDF, ODT, pen and paper...
 
 
 \vspace{12pt}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet posuere dolor. Morbi at hendrerit justo, congue pulvinar nulla. Donec rhoncus leo fermentum lacus molestie, quis bibendum velit commodo. Nullam vel leo in sem ultricies malesuada. Aenean mauris dui, varius quis nulla eget, facilisis eleifend felis. Etiam arcu ligula, eleifend et augue nec, mollis tristique sem. Mauris lobortis consequat mauris. Quisque quis sollicitudin felis.
+\boldsymbol{WHY:} Many different types of file in many locations with little to no cohesion
 
  \vspace{12pt}
  
-In pellentesque nunc eu risus euismod, id blandit quam hendrerit. Etiam ultrices leo ut lorem posuere tempus. Mauris semper a metus vitae suscipit. Integer malesuada mollis quam ut porta. Integer non ligula tempor, tincidunt nulla ac, aliquam elit. Morbi viverra mi ac mi ullamcorper imperdiet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque aliquet mattis porta. Nunc non vulputate lorem. Sed ut volutpat neque. Ut ut tellus ac dui dignissim mattis. Suspendisse lacus turpis, finibus et leo at, maximus aliquam nunc. Nulla eget nisi efficitur, egestas eros molestie, pharetra purus. Integer sodales neque sit amet porttitor tempus. Mauris rutrum eget leo a laoreet.
+\boldsymbol{SOLUTION:} A workflow for tracking feedback from multiple different file types in an easy to do way which allows for:
+\begin{itemize}
+    \item Quick conversions from one file type to another and vice versa
+    \item Creating and maintaining a history of all feedback. Dated with time. Ability to access any version of the document and/or comments recieved.
+
+\end{itemize}
 
  \vspace{12pt}
  
-Praesent dolor nibh, malesuada quis convallis sit amet, volutpat at purus. Suspendisse sed velit quis turpis venenatis fermentum ut sed tellus. Ut eu lacus ultricies, elementum ex gravida, gravida elit. Donec gravida nisl sit amet nulla vestibulum, in malesuada diam varius. Donec sodales efficitur nulla, non tincidunt nibh commodo nec. 
+\boldsymbol{}
 }
 
 
@@ -206,7 +211,7 @@ figure/figure1.png}
     \begin{column}[c]{0.45\textwidth}
     \parbox{\linewidth}{
 
-      Integer dictum condimentum elit ac placerat. Duis vitae ex nec mauris iaculis maximus. Aliquam est velit, imperdiet placerat velit elementum, fringilla fringilla tortor. Nunc tempus vulputate leo, ac commodo dolor mattis ullamcorper. Donec elementum dapibus justo ut vestibulum. 
+      Terminal. Pandoc. Git. GitHub. 
       
       \vspace{12pt}
       
